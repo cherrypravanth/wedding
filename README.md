@@ -1,1 +1,1 @@
-# wedding
+# wedding_template
