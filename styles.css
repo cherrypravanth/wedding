@@ -20,10 +20,28 @@ body {
   background-color: var(--light); 
 }
 
+/* Music Control Styles */
+.music-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  border: none;
+  font-size: 20px;
+}
+
 .hero {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
               url('./images/AC107690.jpg');
-  background: url('./images/AC107690.jpg');
   background-size: cover;
   background-position: center;
   min-height: 150vh;
@@ -63,7 +81,6 @@ body {
   padding: 250px;
   max-width: 400px;
 }
-
 
 .rsvp {
   background-color: var(--primary);
@@ -222,7 +239,7 @@ body {
 
 .img-responsive {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
 }
 
@@ -268,6 +285,10 @@ h2 {
   .section {
     padding: 60px 20px;
   }
+
+  .invitation {
+    padding: 100px 20px;
+  }
 }
 
 @keyframes fadeIn {
@@ -278,30 +299,27 @@ h2 {
 .animate {
   animation: fadeIn 1s ease forwards;
 }
-/* Add this to your styles.css file */
-.music-control {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background: rgba(255,255,255,0.8);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.music-control:hover {
-  background: rgba(255,255,255,0.9);
-}
-
-#musicIcon {
-  font-size: 20px;
-}
+.delay-0 { animation-delay: 0s; }
 .delay-1 { animation-delay: 0.2s; }
 .delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
+
+/* Couple Section Styles */
+.couple-wrap {
+  padding: 60px 0;
+  text-align: center;
+}
+.couple-half {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  margin: 0 2%;
+}
+.desc-groom, .desc-bride {
+  padding: 20px;
+}
+.heart {
+  font-size: 30px;
+  color: var(--primary);
+  margin: 20px 0;
+}
