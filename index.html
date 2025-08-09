@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prasanna Kumar & Pavithra Wedding</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Music Control Button -->
+<button class="music-control" id="musicIcon" onclick="toggleMusic()">🔇</button>
+
+<!-- Background Audio -->
+<audio id="bgMusic" autoplay loop muted>
+  <source src="audio/WhatsApp Audio 2025-08-08 at 21.00.18_23d1a3fd.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<header class="hero" id="home">
+  <div class="hero-content animate">
+    <h1>Prasanna Kumar & Pavithra</h1>
+    <h2>The Eternal Love</h2>
+  </div>
+</header>
+
+<div class="navbar">
+  <a href="#home" class="nav-item">Home</a>
+  <a href="#about" class="nav-item">Divine Story</a>
+  <a href="#wedding" class="nav-item">Ceremony</a>
+  <a href="#rsvp" class="nav-item">Blessings</a>
+</div>
+
+<div class="section about" id="about">
+  <div class="container">
+    <div class="section-title animate">
+      <h1>Prasanna Kumar & Pavithra</h1>
+    </div>
+    <div class="animate delay-1">
+      <img class="img-responsive img-round" src="images/AC107662 (1).jpg" alt="Prasanna & Pavithra">
+      <p><i>The divine love of Prasanna and Pavithra is eternal. Though their union transcended worldly marriage, this celebration commemorates their spiritual bond that has enchanted devotees for centuries.</i></p>
+      <p style="text-align: center;"><a href="#wedding" class="btn btn-dark">Ceremony Details</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="couple-wrap animate-box">
+  <div class="couple-half">
+    <div class="groom">
+      <img src="images/1000430366.jpg" alt="groom" class="img-responsive">
+    </div>
+    <div class="desc-groom">
+      <h3>PRASANNA KUMAR</h3>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+    </div>
+  </div>
+  <p class="heart text-center">❤️</p>
+  <div class="couple-half">
+    <div class="bride">
+      <img src="images/Screenshot_20250725_205551.jpg" alt="groom" class="img-responsive">
+    </div>
+    <div class="desc-bride">
+      <h3>PAVITHRA</h3>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+    </div>
+  </div>
+</div>
+
+<div class="invitation">
+  <div class="container animate delay-2">
+    <center><h1> You Are Blessed</h1></center>
+    <center><h2>To witness the celestial celebration</h2></center>
+  </div>
+</div>
+
+<div class="section details" id="wedding">
+  <div class="container">
+    <div class="section-title animate">
+      <img class="img-responsive img-round" src="./images/imagesAC107705.JPG.jpg" alt="Temple Venue">
+      <h1>Ceremony Details</h1>
+    </div>
+
+    <div class="animate delay-1">
+      <img class="img-responsive img-round" src="./images/AC107702.jpg" alt="Temple Venue">
+      <div class="row">
+        <div class="col animate delay-2">
+          <div class="card">
+            <h2>When</h2>
+            <p><b>Utharabhadra Nakshatrayuktha -Kanya Lagnam</b></p>
+            <p>Morning: On Wednesday 13th August,2025</p>
+            <p>Time at: 10:15 am</p>
+          </div>
+        </div>
+        <div class="col animate delay-3">
+          <div class="card">
+            <h2>Where</h2>
+            <p><b>Venue:</b></p>
+            <p>Bharghava Function Hall</p>
+            <p>Shanthi Theatre,</p>
+            <p>Maripeda-Banglow</p>
+            <p>Dist. Mahabubabad</p>
+            <p><b>Lunch:</b></p>
+            <p>follows..@ 12:30 pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="rsvp" id="rsvp">
+  <div class="container">
+    <div class="section-title animate">
+      <h1>Send Your Blessings</h1>
+    </div>
+    <div class="animate delay-1">
+      <p>Your love and prayers mean the world</p>
+      <a href="#rsvpModal" class="btn btn-light">Send Blessings</a>
+    </div>
+  </div>
+</div>
+
+<div id="rsvpModal" class="modal">
+  <div class="modal-content">
+    <h1>Can We Count On Your Prayers?</h1>
+    <form>
+      <input class="input" type="text" placeholder="Your Name" required>
+      <input class="input" type="email" placeholder="Email (optional)">
+      <textarea class="input" placeholder="Your Blessings or Messages..."></textarea>
+    </form>
+    <p><i>With divine love, PRASANNA KUMAR & PAVITHRA</i></p>
+    <div class="row">
+      <div class="col">
+        <a href="#" class="btn btn-accent">Submit</a>
+      </div>
+      <div class="col">
+        <a href="#" class="btn btn-dark">Cancel</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>with Best Compliments From : Brothers, Sisters & Family</p>
+    <p>© Eternal Celebration of Prasanna Kumar & Pavithra</p>
+    <p>For inquiries, contact us 76598586409</p>
+  </div>
+</footer>
+
+<script>
+  // Music control functionality
+  function toggleMusic() {
+    const audio = document.getElementById('bgMusic');
+    const icon = document.getElementById('musicIcon');
+    
+    if (audio.muted) {
+      audio.muted = false;
+      icon.textContent = '🔊';
+      // Try to play in case it was blocked
+      audio.play().catch(e => console.log("Playback prevented:", e));
+    } else {
+      audio.muted = true;
+      icon.textContent = '🔇';
+    }
+  }
+
+  // Try to unmute and play when user interacts with page
+  document.addEventListener('click', function() {
+    const audio = document.getElementById('bgMusic');
+    if (audio.paused) {
+      audio.play().catch(e => console.log("Autoplay prevented:", e));
+    }
+  }, { once: true });
+
+  // Check if audio is playing and update icon accordingly
+  document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('bgMusic');
+    const icon = document.getElementById('musicIcon');
+    
+    // Update icon based on initial state
+    icon.textContent = audio.muted ? '🔇' : '🔊';
+    
+    // Listen for when audio actually starts playing
+    audio.addEventListener('playing', function() {
+      icon.textContent = audio.muted ? '🔇' : '🔊';
+    });
+  });
+</script>
+
+</body>
+</html>
