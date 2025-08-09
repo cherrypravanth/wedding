@@ -86,7 +86,7 @@ body {
 }
 
 .invitation-text {
-  position: relative;
+  position: center;
   z-index: 1;
   text-align: center;
   padding-top: 100vh; /* Push text below the image area */
@@ -365,4 +365,5 @@ h2 {
   font-size: 30px;
   color: var(--primary);
   margin: 20px 0;
+
 }
