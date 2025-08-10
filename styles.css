@@ -67,7 +67,6 @@ body {
   background-image: linear-gradient(to bottom, #fff, var(--light));
 }
 
-
 .invitation {
   position: relative;
   min-height: 5h;
@@ -126,6 +125,7 @@ body {
     font-size: 1.3rem;
   }
 }
+
 .rsvp {
   background-color: var(--primary);
   color: hsl(10, 6%, 87%);
@@ -366,6 +366,4 @@ h2 {
   font-size: 30px;
   color: var(--primary);
   margin: 20px 0;
-
 }
-
